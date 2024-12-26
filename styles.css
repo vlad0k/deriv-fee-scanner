@@ -1,0 +1,101 @@
+/* Общие стили страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Темный фон */
+    color: #e1e1e1; /* Светлый текст */
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+/* Стиль для инпутов */
+input {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 150px;
+}
+
+label {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* Стиль таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Стилизация заголовков таблицы */
+th {
+    background-color: #2c2c2c;
+    color: #00bcd4; /* Голубой для заголовков */
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Стилизация строк таблицы */
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Чередование цветов строк */
+tr:nth-child(even) {
+    background-color: #252525; /* Темно-серый */
+}
+
+tr:nth-child(odd) {
+    background-color: #1e1e1e; /* Основной цвет таблицы */
+}
+
+tr:hover {
+    background-color: #333333;
+    cursor: pointer;
+}
+
+/* Стили для названия символа */
+td.symbol {
+    font-weight: bold;
+    font-size: 16px;
+    color: #00bcd4;
+}
+
+/* Стили для положительных и отрицательных значений */
+td.positive {
+    color: #4caf50; /* Зеленый цвет для положительных значений */
+}
+
+td.negative {
+    color: #f44336; /* Красный цвет для отрицательных значений */
+}
+
+/* Респонсивность для мобильных устройств */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+    input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bybit Funding Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bybit Funding Monitor</h1>
+    <label for="filter">Filter by symbol:</label>
+    <input type="text" id="filter" placeholder="Enter symbol">
+    <label for="funding-filter">Funding rate threshold:</label>
+    <input type="number" id="funding-filter" step="0.01" placeholder="Enter funding %" value="0.11">
+    <table id="fundingTable">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Last Price</th>
+                <th>Funding Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
